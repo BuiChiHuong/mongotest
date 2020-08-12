@@ -21,6 +21,7 @@ app.get('/student',async function(req,res){
     let dbo = client.db("StudentDB");
     let results = await dbo.collection("Student").find({}).toArray();
     res.render('allStudent',{model:results});
+    //comment
 })
 
 //user submit form
